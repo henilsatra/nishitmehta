@@ -1,0 +1,496 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172445699-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-172445699-1');
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nishit Mehta</title>
+  
+  
+
+  <style>
+      nav{
+          min-height: 105px;   
+      }
+
+      #nav {
+      position:relative;
+      min-height: 105px;
+      padding: 0px 40px 25px 10px;
+      margin:0px 0px 0px 0px;
+     }
+ 
+      ul#navigation {
+          margin:0px auto;
+          position:relative;
+          float:left; 
+      }
+ 
+      ul#navigation li {
+          display:inline;
+          font-size: 25px;
+          color: #000000;
+          position:relative;
+      }
+ 
+      ul#navigation li a {
+          text-shadow:1px 1px 0px #fff;
+          text-decoration:none;
+          display:outside;
+          color: #000000;
+          padding: 19px 40px 25px 10px;
+          font-size: 20px;
+          -webkit-transition:color 0.2s linear, background 0.2s linear;
+          -moz-transition:color 0.2s linear, background 0.2s linear;
+          -o-transition:color 0.2s linear, background 0.2s linear;
+          transition:color 0.2s linear, background 0.2s linear;
+      }
+ 
+      ul#navigation li a:hover {
+          color:#9a1e1e;
+      }
+ 
+      ul#navigation li:hover > a {
+          background:#fff;
+      }
+
+      ul#navigation li:hover > ul
+      {
+      /*these 2 styles are very important,
+      being the ones which make the drop-down to appear on hover */
+          visibility:visible;
+          opacity:1;
+      }
+
+      ul#navigation ul, ul#navigation ul li ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      /*the next 2 styles are very important,
+      being the ones which make the drop-down to stay hidden */
+      visibility:hidden;
+          opacity:0;
+          position: absolute;
+          z-index: 99999;
+          width:118%;
+          background:#f8f8f8;
+          
+      /* css3 transitions for smooth hover effect */
+          -webkit-transition:opacity 0.2s linear, visibility 0.2s linear;
+          -moz-transition:opacity 0.2s linear, visibility 0.2s linear;
+          -o-transition:opacity 0.2s linear, visibility 0.2s linear;
+          transition:opacity 0.2s linear, visibility 0.2s linear;
+      }
+ 
+      ul#navigation ul {
+          top: 105px;
+          left: -25px;
+      }
+ 
+      ul#navigation ul li {
+          clear:both;
+          width:100%;
+          border:0 none;
+      }
+ 
+      ul#navigation ul li a {
+          background:none;
+          padding:7px 15px;
+          font-size: 17px;
+          color: #000000;
+          text-shadow:1px 1px 0px #fff;
+          text-decoration:none;
+          display:inline-block;
+          clear:both;
+          width:100%;
+          text-align: center;
+      }
+
+      
+     
+ 
+    
+      #bigsection{
+          min-height:570px;
+      }
+
+      #smallsection{
+          max-height: 230px;
+      }
+
+      .slider .slides{
+          max-height: 230px;
+      }
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+      
+* {box-sizing: border-box}
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #ffffff;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 100px;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 3px 3px 3px 3px;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    
+    text-align: center;
+    padding: 20px ;
+   
+    
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.actives, .dot:hover {
+  background-color: #000000;
+}
+/* architecture and interior - residential, commercial and corporate*/
+
+    </style>
+</head>
+<link rel="icon" href="img/logo.png">
+<body>
+
+  <!-- navbar -->
+  
+  <nav id="nav" class=" nav-wrapper transparent hide-on-med-and-down" style="width: 100%;">
+        <a href="index.html" class="brand-logo font responsive-img hide-on-small-only">
+            <img style="width: 90px; margin-left: 100px" src="img/logo.png">
+        </a>
+        
+        <ul id="navigation" class="right hide-on-med-and-down">
+            <li class="indigo-text text-darken-3" style="font-family:Bahnschrift;">
+                <a href="index.html">Home
+                </a>
+            </li>
+              
+            <li>
+                <a href="#about" style="font-family:Bahnschrift;">About
+                </a>
+            </li>
+
+            <li>
+              <a href="projects.html" style="font-family:Bahnschrift;">Projects
+              </a>
+            </li>
+          
+            <li>
+                <a href="#contact" style="font-family:Bahnschrift;">Contact
+                </a>
+            </li>     
+        </ul>   
+  </nav>
+
+
+  <nav class="transparent hide-on-med-and-up" style="height: 130px;">
+      <div class="container">
+          <a href="index.html" class="brand-logo font responsive-img hide-on-med-and-up">
+            <img style="width: 100px; margin-top:10px;" src="img/logo.png">
+          </a>
+          <a href="" class="sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons black-text" style="font-size:30px; margin-left: -17px;">menu
+              </i>
+          </a>
+              <ul class="sidenav grey lighten-2" id="mobile-menu">
+                  <li><a href="index.html" style="font-family:Bahnschrift;font-size: large; margin-top:15px;">Home</a></li>
+                  <li><a href="about.html"  style="font-family:Bahnschrift;font-size: large;">About</a></li>
+                  <li><a href="projects.html"  style="font-family:Bahnschrift;font-size: large;">Projects</a></li>
+                  <li><a href="contact.html" style="font-family:Bahnschrift;font-size: large;">Contact</a></li>
+              </ul>
+      </div>
+  </nav>
+ 
+  <div class="slider hide-on-med-and-down">
+    <ul class="slides" id="bigsection">
+      <li id="bigsection">
+        <img src="img/3.jpg">
+        <div class="center caption">
+          <h3 style="font-family:Bahnschrift; font-weight:lighter;">Fleet Management Office, Mumbai</h3>
+          <p style="font-family:Bahnschrift; color:white; font-size:larger">Project execution for Adrianse Group</p>
+        </div>
+      </li>
+      <li id="bigsection">
+        <img src="img/4.jpg">
+        <div class=" center caption">
+          <h3 style="font-family:Bahnschrift; font-weight:lighter;">SOTC Office, Bangalore </h3>
+          <p style="font-family:Bahnschrift; color:white; font-size:larger">Design and Execution for SOTC Group</p>
+        </div>
+      </li>
+      <li id="bigsection">
+        <img src="img/11.jpg">
+        <div class="center caption">
+          <h3 style="font-family:Bahnschrift; font-weight:lighter;">Esplanade Tata House, Mumbai</h3>
+          <p style="font-family:Bahnschrift; color:white; font-size:larger">In collaboration with Irani Architects</p>
+        </div>
+      </li>
+      <li id="bigsection">
+        <img src="img/12.jpg">
+        <div class=" center caption">
+          <h3 style="font-family:Bahnschrift; font-weight:lighter;">Thomas Cook Office, Mumbai</h3>
+          <p style="font-family:Bahnschrift; color:white; font-size:larger">Design and Execution for TCIL Group</p>
+        </div>
+      </li>
+      <li id="bigsection">
+        <img src="img/1.jpg">
+        <div class=" center caption">
+          <h3 style="font-family:Bahnschrift; font-weight:lighter;">Fleet Management Office, Mumbai</h3>
+          <p style="font-family:Bahnschrift; color:white; font-size:larger">Project execution for Adrianse Group</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <BR class="hide-on-small-only"><BR class="hide-on-small-only"> <BR class="hide-on-small-only"><BR class="hide-on-small-only">
+  <h6 class="black-text center text-darken-4 scrollspy hide-on-small-only" style="font-family:Bahnschrift;font-weight:lighter; font-style: italic;">
+   "Design today is beyond the agency of the individual, it lies in collaboration between designers, companies and agents of design."
+  </h6>
+  
+  <div class="container scrollspy hide-on-small-only" style="display: flex;" id="about">
+      <img class="image" src="img/6.jpg" style="width: 300px;margin-top:50px;margin-right:50px;height:350px;" alt="Person Image">
+      <div class="information" style="margin-top: 20px;">
+        <h3 style="font-family:Bahnschrift; font-weight:lighter;">Nishit Mehta
+        </h3>
+        <p style="font-family:Bahnschrift; font-weight:lighter; font-size:larger">Architect and Interior Designer
+        </p>
+
+        <p style="font-family:Bahnschrift; font-weight:lighter; text-align: justify; font-size:14px;">Nishit Mehta has been working in the architecture and interior design industry for more than 30 years. 
+          He completed his architectural education from L.S. Raheja and been based out of Mumbai ever since. 
+          The initial apprenticeship with Nikhil Adiacha and Associates, A.V Vora and associates, Ajit Bhuta and Associates, Doshi Bhatt and associates guided his further trajectory.
+          After an early period of work on township projects like Reliance Petroleum at Jamnagar, Airoli Railway station, Call centres for WNS, he moved into the interior corporate industry. 
+          Having enjoyed working with multiple practises on different projects, today Ar. Nishit Mehta runs an independent practise while providing architectural consultancy and project coordination services to Adrianse Group(DEL), PS2 (DEL), Mindstudio(BLR), Irani Architects(BOM), SLM Architects(BOM) on various projects.
+        </p>
+        
+        <a href="about.html">
+          <p class="black-text" style="font-family:Bahnschrift;">Know more >>
+          </p>
+          </a>
+      </div>
+  </div>
+
+  <div class="slider hide-on-med-and-up" id="smallsection">
+      <ul class="slides">
+          <li id="smallsection">
+              <img src="img/1.JPG" >
+          </li>
+          <li id="smallsection">
+              <img src="img/2.JPG" >
+          </li>
+          <li id="smallsection">
+              <img src="img/3.JPG" >
+          </li>
+          <li id="smallsection">
+              <img src="img/4.JPG" >
+          </li>
+          <li id="smallsection">
+              <img src="img/5.jpg" >
+          </li>
+      </ul>
+  </div>
+<p class="black-text center text-darken-4 scrollspy hide-on-med-and-up" style="font-family:Bahnschrift;font-size:12px;">
+  "Design today is beyond the agency of the individual, it lies in collaboration between designers, companies and agents of design."
+<p>
+<img class="hide-on-med-and-up" style="width:300px; display: block; margin-left: auto; margin-right: auto;" src ="img/6.jpg"> 
+<div class="container hide-on-med-and-up">
+  <h4 class="center" style="font-family:Bahnschrift; font-weight:lighter;">Nishit Mehta
+  </h4>
+  <h6 class="center" style="font-family:Bahnschrift; font-weight:lighter;">Architect and Interior Designer
+  </h6>
+  <p class="black-text" style="font-family:Bahnschrift;font-size:12px;text-align:justify;">
+    He completed his architectural education from L.S. Raheja and been based out of Mumbai ever since. 
+          The initial apprenticeship with Nikhil Adiacha and Associates, A.V Vora and associates, Ajit Bhuta and Associates, Doshi Bhatt and associates guided his further trajectory.
+          After an early period of work on township projects like Reliance Petroleum at Jamnagar, Airoli Railway station, Call centres for WNS, he moved into the interior corporate industry. 
+          Having enjoyed working with multiple practises on different projects, today Ar. Nishit Mehta runs an independent practise while providing architectural consultancy and project coordination services to Adrianse Group(DEL), PS2 (DEL), Mindstudio(BLR), Irani Architects(BOM), SLM Architects(BOM) on various projects.
+  <p>
+
+    <a class="black-text" href="about.html">
+      <p class="black-text" style="font-family:Bahnschrift;text-align:justify;">Know more >>
+      </p>
+      </a>
+<BR>
+      <h6 class="black-text" style="font-family:Bahnschrift;">Contact</h6>
+                
+                <p class="black-text" style="font-family:Bahnschrift;font-size:small;">Office Address : 114, Loha Bhavan, P. D'Mello Road, Carnac Bunder, Mumbai - 400 009.</p>
+
+                <p class="black-text" style="font-family:Bahnschrift;font-size:small;">Contact Number : +91 93242 49191, +91 22 2348 0657</p>
+
+                <p class="black-text" style="font-family:Bahnschrift;font-size:small;">Email : nrmdesign@gmail.com</p>
+
+
+                <BR>
+
+                <h6 class="black-text" style="font-family:Bahnschrift;">Connect</h6>
+                <ul>
+                    <li>
+                    <i class="fab fa-linkedin black-text"></i>
+                    <a href="https://www.linkedin.com/in/nishit-mehta-55115911" class="black-text" style="font-family:Bahnschrift;font-size:small;">&nbsp;&nbsp;LinkedIn</a>
+                    </li>
+                    <BR>
+                    <li>
+                    <i class="fa fa-envelope black-text"></i>
+                     <a href=mailto:nrmdesign@gmail.com?subject class="black-text" style="font-family:Bahnschrift;font-size:small;">&nbsp;&nbsp;Email</a>
+                     </li>
+                     <BR>
+                      <li>
+                      <i class="fa fa-whatsapp black-text"></i>
+                      <a href="https://wa.me/919324249191" class="black-text" style="font-family:Bahnschrift;font-size:small;">&nbsp;&nbsp;&nbsp;Whatsapp</a>
+                       </li>  
+                </ul>
+                
+</div>
+
+
+
+      <!-- footer -->
+  <footer class="page-footer white ">
+      <div class="container hide-on-small-only" style="width:880px">
+          <div class="row">
+            <div class="col s12 l5 scrollspy" id="contact">
+                <h6 class="black-text" style="font-family:Bahnschrift;">Contact</h6>
+                
+                <p class="black-text" style="font-family:Bahnschrift;font-size:small;">Office Address : 114, Loha Bhavan, P. D'Mello Road, Carnac Bunder, Mumbai - 400 009.</p>
+
+                <p class="black-text" style="font-family:Bahnschrift;font-size:small;">Contact Number : +91 93242 49191, +91 22 2348 0657</p>
+
+                <p class="black-text" style="font-family:Bahnschrift;font-size:small;">Email : nrmdesign@gmail.com</p>
+            </div>
+            <div class="col s12 l2 offset-l5 scrollspy">
+                <h6 class="black-text" style="font-family:Bahnschrift;">Connect</h6>
+                <ul>
+                    <li>
+                    <i class="fab fa-linkedin black-text"></i>
+                    <a href="https://www.linkedin.com/in/nishit-mehta-55115911" class="black-text" style="font-family:Bahnschrift;font-size:small;">&nbsp;&nbsp;LinkedIn</a>
+                    </li>
+                    <BR>
+                    <li>
+                    <i class="fa fa-envelope black-text"></i>
+                     <a href=mailto:nrmdesign@gmail.com?subject class="black-text" style="font-family:Bahnschrift;font-size:small;">&nbsp;&nbsp;Email</a>
+                     </li>
+                     <BR>
+                      <li>
+                      <i class="fa fa-whatsapp black-text"></i>
+                      <a href="https://wa.me/919324249191" class="black-text" style="font-family:Bahnschrift;font-size:small;">&nbsp;&nbsp;&nbsp;Whatsapp</a>
+                       </li>  
+                </ul>
+            </div>
+          </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+          <div class="container center-align hide-on-med-and-down" style="font-family:Bahnschrift;">&copy; Architect Nishit Mehta</div>
+          <div class="container center-align hide-on-med-and-up" style="font-family:Bahnschrift;">&copy; Architect Nishit Mehta</div>
+      </div>
+
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#mobile-menu').sidenav({ edge: 'left'});
+        $('#mobile-menu-right').sidenav({ edge: 'right'});
+        $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
+        $('.carousel').carousel({
+          fullWidth : false,
+          dist: 0,
+          indicators : true
+        });
+        $('.datepicker').datepicker({
+        disableWeekends : true
+            
+    });
+    $('.slider').slider({
+    indicators: false,
+    height: 500,
+    transition:500,
+    interval: 5000
+    });
+    $('.tooltipped').tooltip();
+    $('.scrollspy').scrollSpy();
+    $(".tabs-content").css('width','1000px');
+    });
+    
+
+  </script>
+</body>
+</html>
